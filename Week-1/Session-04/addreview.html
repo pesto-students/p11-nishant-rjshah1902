@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resturant</title>
+</head>
+<body>
+    
+    <!-- Start Header of Resturant -->
+    <header>
+        <h1>Resturant Review</h1>
+    </header>
+    <!-- End Header of Resturant -->
+
+    <!-- Start Nav of Resturant -->
+    <nav>
+        <p>
+            <a href="index.html">Home</a>
+            <a href="addreview.html">Add Review</a>
+            <a href="about.html">About Us</a>
+        </p>
+    </nav>
+    <!-- End Nav of Resturant -->
+
+    <!-- Main Section of Resturant -->
+    <main>
+
+        <section>
+          
+            <h2>Add Review</h2>
+
+            <form action="" method="post">
+
+                <div>
+                    <label for="">Name: </label>
+                    <input type="text" name="name">
+                </div><br/>
+                
+                <div>
+                    <label for="">Resturant: </label>
+                    <select name="resturant">
+                        <option value="">Select One Resturant</option>
+                        <option value="mainstreetcafe">Main Street Cafe</option>
+                        <option value="greekhouse">Greek House</option>
+                    </select>
+                </div><br/>
+                
+                <div>
+                    <label for="">Date of visit: </label>
+                    <input type="date" name="visit_date">
+                </div><br/>
+                
+                <div>
+                    <label for="">Rating: </label>
+                    <input type="number" name="rating" min="1" max="5" >
+                </div><br/>
+                
+                <div>
+                    <label for="">Details: </label>
+                    <textarea name="details" cols="30" rows="5"></textarea>
+                </div><br/>
+
+                <div>
+                    <button type="submit">Submit</button>
+                </div><br/>
+            </form>
+
+        </section>
+    
+    </main>
+    <!-- End Main Section of Resturant -->
+
+    <!-- Start Footer Section -->
+    <footer>
+        &copy; 2023 Resturant Review
+    </footer>
+    <!-- End Footer Section -->
+
+</body>
+</html>
