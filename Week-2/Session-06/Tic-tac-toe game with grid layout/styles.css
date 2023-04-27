@@ -17,6 +17,7 @@ body {
    display: grid;
    justify-content: center;
    grid-gap: 10px;
+   grid-template-columns: 100px 100px 100px;
 }
 
 #board > div {
