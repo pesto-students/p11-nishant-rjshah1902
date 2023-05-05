@@ -1,43 +1,37 @@
-let numberToGuess;
-let totalGuesses = 10;
-let currentGuess = 1;
+let currentGuess = 1
 
-playGuessingGame(7,3);
-
-function playGuessingGame(numberToGuess,totalGuessess){
+function playGuessingGame(numberToGuess,totalGuessess = 10){
     
-    var enternumber = prompt('Enter Number betweeen 1 and 100');
-
-    if(numberToGuess != enternumber){
+    let enternumber = prompt('Enter Number betweeen 1 and 100');
         
-        this.currentGuess = currentGuess++;
+    if(numberToGuess !== enternumber){
+        
+        currentGuess++; 
 
-        if(this.currentGuess <= totalGuessess){
+        if(currentGuess < totalGuessess){
+
+            if(isNaN(totalGuessess)) {
+                enternumber = prompt(`Please Enter Number`);
+            }
 
             if(enternumber < numberToGuess){
-
-                alert('Guess a Large Number');
-
-            } else if( enternumber > numberToGuess){
-
-                alert('Guess a Small Number');
-
-            } else if(isNaN(totalGuessess) == false) {
-
-                enternumber = prompt('Please Enter Number');
-
-            }
+                enternumber = prompt(`${enternumber} Please Guess a Biger Number`);
+            } 
+            
+            if( enternumber > numberToGuess){
+                enternumber = prompt(`${enternumber} Please Guess a Smaller Number`);
+            } 
             
             playGuessingGame(numberToGuess,totalGuessess);
-        
+
         }else{
-            alert('You have Reached out of Range');
+            alert('You Have Reached Max...!');
         }
-        
-    }else{
-
-        alert('You Are Won the Game....!');
-
+    
+    } else if(numberToGuess === enternumber){      
+        alert('You Are Won the Match......!');
     }
 
-}
+};
+
+playGuessingGame(7,3);

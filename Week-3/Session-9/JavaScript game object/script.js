@@ -5,7 +5,7 @@ let game = {
     coins: 0,
     points: 0,
    
-    playerDies:  function (){
+    playerDies:  function () {
         
         this.points = this.coins*10;
         
@@ -18,7 +18,7 @@ let game = {
         return this.points;
     },
    
-    newGame:  function (){
+    newGame:  function () {
         
         this.lives = 3;
         this.coins = 0;
