@@ -1,37 +1,38 @@
-isStrongPassword();
 
-function isStrongPassword(){
-
-    let password = prompt('Enter your Password');
+function isStrongPassword(password){
 
     if(password.length > 8){
-
-        if(Number.isInteger(password) !== password) {
         
-            password = prompt('Password is very easy, please Use Atleast 1 Number Character');
+        if (password.includes('password') === true) {
         
-        }else if(password.toLowerCase() !== password) {
+            console.log("Please don't use password in your Password");
         
-            password = prompt('Password is very easy, please Use Atleast 1 lowercase Character');
+        } else if(password.toLowerCase() === password && password.toUpperCase() !== password) {
         
-        } else if(password.toUpperCase() !== password) {
+            console.log('Password is very easy, please Use Atleast 1 Upercase Character');
         
-            password = prompt('Password is very easy, please Use Atleast 1 uppercase Character');
+        } else if(password.toUpperCase() === password && password !== password.toLowerCase()) {
+        
+            console.log('Password is very easy, please Use Atleast 1 lowercase Character');
             
         } else {
 
-            alert('Your Password is Good');
+            console.log('Your Password is Good');
 
         }
     
     } else if(password.length < 8){
     
-        password = prompt('Password is Very Short, Use Atleast 8 Character');
+        console.log('Password is Very Short, Use Atleast 8 Character');
     
     } else {
     
-        alert('Your Password is Strong');
+        console.log('Your Password is Strong');
     
     }
-
 }
+
+isStrongPassword('oicoinwoincw');
+isStrongPassword('ABCWEIINE');
+isStrongPassword('iwnciwuSSnec');
+isStrongPassword('iwnciwuSpasswordSnec');
