@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting Lineup</title>
+
+    <style>
+        fieldset{
+            width: 30%;
+            margin: 10px 0;
+        }
+        .players div{
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h2>Starting Lineup</h2>
+
+    <fieldset>
+        <legend>Status:</legend>
+
+        <div>
+            <label>
+                <input type="radio" name="status" value="draft" /> Draft
+            </label>
+            <label>
+                <input type="radio" name="status" value="final" checked /> Final
+            </label>
+        </div>
+    </fieldset>
+
+    <div>
+        <label>Date:</label>
+        <input type="date" value="2023-04-23" />
+    </div>
+
+    <fieldset>
+        <legend>Players:</legend>
+
+        <div class="players">
+            <div>
+                <label class="label">
+                    <input type="checkbox" name="players" value="Aarav Agarwal" /> Aarav Agarwal
+                </label>
+            </div>
+           <div>
+                <label class="label">
+                    <input type="checkbox" name="players" value="Ava Johnson" /> Ava Johnson
+                </label>
+           </div>
+           <div>
+                <label class="label">
+                    <input type="checkbox" name="players" value="Julio Ortiz" /> Julio Ortiz
+                </label>
+           </div>
+            <div>
+                <label class="label">
+                    <input type="checkbox" name="players" value="Liam Rubio" /> Liam Rubio
+                </label>
+            </div>
+            <div>
+                <label class="label">
+                    <input type="checkbox" name="players" value="Emma Witherspoon" /> Emma Witherspoon
+                </label>
+            </div>
+        </div>
+    </fieldset>
+
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+
+</body>
+</html>

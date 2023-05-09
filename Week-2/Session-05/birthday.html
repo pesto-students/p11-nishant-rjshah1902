@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Message Creater</title>
+
+    <style>
+       .form_heading label{
+            width: 10%;
+            float: left;
+        }
+        .form_heading{
+            margin-bottom: 20px;
+        }
+        button{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="" method="post" enctype="multipart/form-data" >
+
+        <div class="form_heading">
+            <label>Message</label>
+            <input type="text" name="message" required id="message" placeholder="Birhtday Message" value="Happy Birhtday" />
+        </div>
+
+        <div class="form_heading">
+            <label>
+                Email Address
+            </label>
+            <input type="email" name="email" required id="email" placeholder="name@gmail.com" />
+        </div>
+    
+        <div class="form_heading">
+            <label>
+                Date to Send
+            </label>
+            <input type="date" name="date" required id="date" />
+        </div>
+
+        <div class="form_heading">
+            <label>
+                Message Color
+            </label>
+            <input type="color" name="color" id="color" />
+        </div>
+
+        <div class="form_heading">
+            <label>
+               Number of blinks
+            </label>
+            <input type="number" name="blinks" id="blinks" value="0" />
+        </div>
+        
+        <div class="form_heading">
+            <label>
+               Music Volume
+            </label>
+            <input type="range" name="volume" id="volume" min="1" max="10" value="5" />
+        </div>
+
+        <button type="submit">
+            Submit
+        </button>
+
+    </form>
+
+</body>
+</html>
