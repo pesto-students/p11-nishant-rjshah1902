@@ -44,3 +44,23 @@ function power(a,b){
     console.log(final);
     return final;
 }
+
+
+const callMethod = {
+    first_val: 10,
+    second_val: 5,
+    addAll: function () {
+        return add(this.first_val,this.second_val);
+    }
+}
+
+
+
+const applyMethod = {
+    first_val: 10,
+    second_val: 5,
+    subtractAll: function () {
+        return add(this.first_val,this.second_val);
+    }
+}
+
